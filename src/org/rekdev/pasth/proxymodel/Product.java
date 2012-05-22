@@ -1,12 +1,15 @@
 package org.rekdev.pasth.proxymodel;
 
 public interface Product {
-    public String getName();
+    public String getSku() throws Exception;
 
-    public void setName( String name );
+    public void setSku( String sku ) throws Exception;
 
-    public int getPrice();
+    public String getName() throws Exception;
 
-    public void setPrice( int price );
+    public void setName( String name ) throws Exception;
 
+    public int getPrice() throws Exception;
+
+    public void setPrice( int price ) throws Exception;
 }
